@@ -13,7 +13,9 @@
   </head>
 
   <body>
-    @include('back.comps.header')
+    <header>
+      @include('back.comps.header')
+    </header>
 
     @include('back.comps.leftNav')
 
