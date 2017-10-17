@@ -2,7 +2,7 @@
 
 /*
 |--------------------------------------------------------------------------
-| Web Routes
+| back Routes
 |--------------------------------------------------------------------------
 |
 | Here is where you can register web routes for your application. These
@@ -11,10 +11,8 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
+Route::group(['prefix'=>'admin'],function() {
+  Route::any('/',function() {
+    return view('back.index');
+  });
 });
-
-/*后台*/
-require __DIR__.'/back.php';
-
