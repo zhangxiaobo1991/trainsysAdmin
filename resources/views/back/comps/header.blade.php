@@ -1,12 +1,13 @@
-<div class="navbar navbar-default">
-	<div class="contain-fluid">
+<div class="navbar navbar-inverse">
+	<div class="container-fluid">
+		<!-- 缩小后的左侧brand标识 右侧的菜单唤醒 -->
 		<div class="navbar-header">
 			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 				<span class="icon-bar"></span>
 			</button>
-			<a href="#" class="navbar-brand">trainsys</a>
+			<a href="#" class="navbar-brand"><img src="{{ asset('icon.png') }}" alt="" style="width: 20px;height: 20px"></a>
 		</div>
 
 		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -31,7 +32,5 @@
 				</li>
 			</ul>
 		</div>	
-
-		
 	</div>
 </div>

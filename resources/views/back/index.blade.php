@@ -9,21 +9,16 @@
     <link rel="shortcut icon" href="{{ asset('icon.png') }}">
     <link rel="stylesheet" href="{{ asset('back/css/bootstrap-v3.3.7.min.css') }}">
 
+    <link rel="stylesheet" href="{{ asset('back/css/back.css') }}">
     @yield('styles')
   </head>
 
   <body>
-    <header>
-      @include('back.comps.header')
-    </header>
-
-    @include('back.comps.leftNav')
-
-    @yield('rightCont')
-
-    @include('back.comps.footer')
-
-
+    @include('back.comps.header')
+    <div class="container-fluid">
+      @include('back.comps.leftNav')
+      @include('back.comps.main')
+    </div>
     <script src="{{ asset('back/js/jquery-3.2.1.min.js') }}"></script>
     <script src="{{ asset('back/js/bootstrap-v3.3.7.min.js') }}"></script>
     @yield('scripts')

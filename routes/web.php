@@ -18,3 +18,7 @@ Route::get('/', function () {
 /*后台*/
 require __DIR__.'/back.php';
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
